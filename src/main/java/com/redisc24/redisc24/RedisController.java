@@ -10,6 +10,11 @@ public class RedisController {
 
     @GetMapping("/hello")
     public String sayHello() {
-        return "Hello, World!";
+        return "Hello from Fixed Window!";
+    }
+
+    @GetMapping("/hello-token")
+    public String sayHelloTokenBucket() {
+        return "Hello from Token Bucket!";
     }
 }
